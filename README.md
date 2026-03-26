@@ -1,4 +1,6 @@
-# Praktikum Pemrograman Web 2 – CodeIgniter 4 (CRUD Artikel)
+# Laporan Praktikum Pemrograman Web 2
+
+## Praktikum 2 – CodeIgniter 4 (CRUD Artikel)
 
 ## NAMA: SHE SHE METAHANOVER 
 ## NIM: 312410432 
@@ -216,28 +218,39 @@ Dari praktikum ini dapat dipelajari bahwa framework **CodeIgniter 4** mempermuda
 Praktikum ini juga memperkenalkan proses pembuatan **CRUD sederhana** untuk mengelola data artikel dalam sebuah aplikasi web.
 
 # Screenshot
-1. Halaman Artikel 
+## Halaman Artikel 
 Halaman artikel adalah halaman yang menampilkan daftar semua artikel yang ada di database.
+<img width="1600" height="864" alt="image" src="https://github.com/user-attachments/assets/46681c2e-7b0f-49b0-97f6-f5f710e33743" />
 
+---
 
-2. Halaman Detail Artikel 
+## Halaman Detail Artikel 
 Halaman detali artikel digunakan untuk menampilkan isi artikel secara lengkap.
+![WhatsApp Image 2026-03-08 at 22 38 27](https://github.com/user-attachments/assets/7df1d5e8-273d-497e-bac4-28a4ce076515)
 
+---
 
-3. Halaman Admin 
+## Halaman Admin 
 Halaman admin adalah halaman yang digunakan untuk mengelola data artikel.
+![WhatsApp Image 2026-03-08 at 22 53 00](https://github.com/user-attachments/assets/f72dc1d5-705f-4724-be73-08be05a54053)
 
+---
 
-4. Hapus Artikel 
+## Hapus Artikel 
 Fitur hapus artikel digunakan untuk menghapus data artikel dari database.
+![WhatsApp Image 2026-03-08 at 23 13 13](https://github.com/user-attachments/assets/5732882a-f93a-432d-9ed0-78ca1350b442)
 
+---
 
-5. Edit Artikel 
+## Edit Artikel 
 Fitur edit artikel digunakan untuk mengubah atau memperbarui data artikel yang sudah ada.
+![WhatsApp Image 2026-03-08 at 23 09 09](https://github.com/user-attachments/assets/e593cf4d-e8bf-4820-aaf7-7985d3310381)
 
+---
 
-6. Tambah Artikel 
+## Tambah Artikel 
 Fitur tambah artikel digunakan untuk menambahkan artikel ke dalam database.
+![WhatsApp Image 2026-03-08 at 23 02 34](https://github.com/user-attachments/assets/ca86a402-47e7-4649-bf6c-e5da3b170485)
 
 
 ---
@@ -266,9 +279,6 @@ Fungsi:
 * Sebagai template utama (header, navbar, footer)
 * Menggunakan `renderSection('content')` untuk isi halaman
 
-Screenshot:
-
-
 ---
 
 ### 2. Modifikasi View Home
@@ -282,10 +292,6 @@ Mengubah file `home.php` agar menggunakan layout:
 <h1><?= $title; ?></h1>
 <p><?= $content; ?></p>
 <?= $this->endSection() ?>
-```
-
-Screenshot:
-
 
 ---
 
@@ -300,10 +306,6 @@ Fungsi:
 
 ```php
 $model->orderBy('created_at', 'DESC')->limit(5)->findAll();
-```
-
-Screenshot:
-
 
 ---
 
@@ -315,9 +317,6 @@ Fungsi:
 
 * Menampilkan daftar artikel dalam bentuk list
 
-Screenshot:
-
-
 ---
 
 ### 5. Menambahkan Field Tanggal pada Database
@@ -327,10 +326,6 @@ Menambahkan field `created_at` untuk menampilkan artikel terbaru.
 ```sql
 ALTER TABLE artikel 
 ADD created_at DATETIME DEFAULT CURRENT_TIMESTAMP;
-```
-
-Screenshot:
-
 
 ---
 
@@ -350,6 +345,19 @@ Pada praktikum ini, mahasiswa berhasil:
 * Menggunakan View Cell untuk sidebar
 * Menampilkan data artikel dari database
 * Mengurutkan artikel berdasarkan tanggal terbaru
+
+## Screenshot
+
+## Tampilan Halaman Home dengan Layout Lengkap
+![WhatsApp Image 2026-03-25 at 13 40 58](https://github.com/user-attachments/assets/40f99f0d-99f9-41db-ab52-dbea5858c9c4)
+
+## Tampilan Widget Artikel Terkini
+![WhatsApp Image 2026-03-25 at 13 50 06](https://github.com/user-attachments/assets/9707c9e8-9c13-4e24-b77c-46af88fa4799)
+
+##  Struktur Tabel Database - Artikel
+![WhatsApp Image 2026-03-25 at 13 51 45](https://github.com/user-attachments/assets/b8d74d93-2df5-469f-a0e0-f3b69a19085a)
+
+
 
 
 
