@@ -357,6 +357,19 @@ Pada praktikum ini, mahasiswa berhasil:
 ##  Struktur Tabel Database - Artikel
 ![WhatsApp Image 2026-03-25 at 13 51 45](https://github.com/user-attachments/assets/b8d74d93-2df5-469f-a0e0-f3b69a19085a)
 
+## Pertanyaan dan Tugas 
+1. Apa manfaat utama dari penggunaan View Layout dalam pengembangan aplikasi?
+
+jawab: View Layout digunakan untuk membuat template tampilan utama yang dapat digunakan ulang sehingga menghindari duplikasi kode, menjaga konsistensi desain, serta      memudahkan proses pengembangan dan maintenance aplikasi.
+
+2. Jelaskan perbedaan antara View Cell dan View biasa.
+
+jawab: View Cell digunakan untuk membuat komponen kecil yang dapat dipanggil di dalam view dan bisa digunakan kembali di berbagai halaman, sedangkan View biasa digunakan untuk menampilkan satu halaman penuh yang dipanggil dari controller.
+
+3. Ubah View Cell agar hanya menampilkan post dengan kategori tertentu. 
+
+jawab: View Cell dapat diubah agar hanya menampilkan post dengan kategori tertentu dengan menambahkan parameter kategori pada method dan menggunakan query where untuk memfilter data sesuai kategori yang diinginkan.
+
 
 
 
